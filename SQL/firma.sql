@@ -27,7 +27,7 @@ create table programer(
 
 alter table sudjeluje add foreign key (projekt) references projekt(sifra);
 alter table sudjeluje add foreign key (programer) references programer(sifra);
-
+#1-10
 insert into programer (sifra, ime, prezime, datumrodenja, placa) 
 values 
 (null, 'Glynn', 'Lembke', '2000-10-26', 35),
@@ -40,7 +40,7 @@ values
 (null, 'Emalee', 'Conningham', '2001-10-08', 27),
 (null, 'Peta', 'Petrushanko', null, 14),
 (null, 'Douglas', 'Peperell', '2000-08-15', 8);
-
+#1-5
 insert into projekt (sifra,naziv,cijena)
 values
 (null,'Projekt-x',null),
@@ -48,7 +48,7 @@ values
 (null,'Projekt-z',null),
 (null,'Projekt-a',134),
 (null,'Projekt-b',523);
-
+#1-7
 insert into sudjeluje(projekt,programer,datumpocetka,datumkraja)
 values
 (1,5,'2015-05-07','2016-06-19'),

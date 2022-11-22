@@ -13,7 +13,7 @@ create table zaposlenik(
 );
 
 alter table zaposlenik add foreign key (nadredeni) references zaposlenik(sifra);
-
+#1-6
 insert into zaposlenik(sifra,ime,prezime,placa,nadredeni)
 values
 (null,'Tildy', 'Gerard',null,null ),
