@@ -52,3 +52,18 @@ select prezime from autor where prezime like '_a_b%'
 select count(ime) from autor where ime in('kata','fata');
 
 select * from katalog group by autor order by count(autor) desc;
+
+select ime,prezime from autor where sifra=0;
+
+insert into autor(sifra,ime,prezime,datumrodenja)
+values
+(0, 'Lobel','Spehar','1992-04-15');
+
+delete from autor where sifra=0;
+
+select * from autor where datumrodenja between '1992-01-01' and '1992-12-31' order by datumrodenja;
+
+select * from autor where datumrodenja like '%-04-15%' order by datumrodenja;
+
+update autor set ime ='nemaimena' where sifra=0;
+update autor set ime ='Lobel' where sifra=0;
