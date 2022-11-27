@@ -67,3 +67,7 @@ select * from autor where datumrodenja like '%-04-15%' order by datumrodenja;
 
 update autor set ime ='nemaimena' where sifra=0;
 update autor set ime ='Lobel' where sifra=0;
+
+select concat(first_name," ",last_name) as fullname from patients order by first_name;
+
+select distinct year(birth_date) from patients order by birth_date asc;
