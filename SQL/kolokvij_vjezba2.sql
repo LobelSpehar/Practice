@@ -1,4 +1,4 @@
-# mysql -uroot < D:\Repositories\EdunovaPP26\SQL\kolokvij_vjezba2.sql
+# mysql -uroot < D:\Repositories\practice\SQL\kolokvij_vjezba2.sql
 
 #0
 
@@ -134,4 +134,4 @@ order by neprijatelj.haljina desc;
 #6 26.28.54
 
 select vesta, asocijalno from decko 
-left join decko_zarucnica on decko_zarucnica.decko=decko.sifra;
+left join decko_zarucnica on decko_zarucnica.decko=decko.sifra where decko_zarucnica.decko is null;

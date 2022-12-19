@@ -1,4 +1,4 @@
-# mysql -uroot < D:\Repositories\EdunovaPP26\SQL\kolokvij_vjezba1.sql
+# mysql -uroot < D:\Repositories\practice\SQL\kolokvij_vjezba1.sql
 
 drop database if exists kolokvij;
 create database kolokvij;
@@ -134,5 +134,5 @@ order by muskarac.hlace desc;
 #6 43 min
 
 select haljina, maraka from sestra
-left join sestra_svekar on sestra.sifra=sestra_svekar.sestra;
+left join sestra_svekar on sestra.sifra=sestra_svekar.sestra where sestra_svekar.sestra is null;
 
