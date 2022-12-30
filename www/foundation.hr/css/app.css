@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'My Custom Font';
+  src: url(../fonts/Azonix.otf) format('truetype');
+}
+
+:root {
+  --primary: #003049;
+  --secondary: #fcbf49;
+  --alert: #d62828;
+  --accent: #f77f00;
+  --pale: #eae2b7;
+}
+
+.card {
+  padding: 10px;
+}
+.grid-container {
+  margin-top: 10px;
+}
+.log-in-form {
+  border: 1px solid #cacaca;
+  padding: 1rem;
+  border-radius: 0;
+}
+a {
+  margin: 5px;
+}
