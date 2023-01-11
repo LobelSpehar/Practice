@@ -1,2 +1,1 @@
-<hr>
-&copy; <?php echo date('Y'); ?>
+<hr> &copy; <?php echo date('Y'); ?> Edunova

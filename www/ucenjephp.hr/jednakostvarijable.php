@@ -9,21 +9,31 @@
       <div class="grid-x grid-padding-x">
         <div class="large-12 cell">
           <div class="callout" id="tijelo">
+          
           <?php
-                // https://www.php-fig.org/psr/
-                echo 'Hello world<br>', PHP_EOL; // pod jednostrukim navodnicima ne rade escape sekvence
-                echo "Edunova\n";
+            
 
-                // nadoljepljivanje
-                echo '<p>' . 3 . '</p>';
+            // = je operator dodjeljivanja
+            $i='2';
 
-                print '<p>Osijek</p>';
-                //https://stackoverflow.com/questions/234241/how-are-echo-and-print-different-in-php
+            // == je operator provjere vrijednosti
+            echo $i==2, '<hr>';
 
-                echo '<p>O\'Neal</p>';
+            // === je operator provjere vrijednosti i tipa podatka
+            echo $i===2, '<hr>'; // vrijednst false se ne ispisuje, true je 1
 
-                echo '<p style="color: red;">X</p>'
+
+            echo $i>1, '<hr>';
+            echo $i>=1, '<hr>';
+            echo $i<1, '<hr>';
+            echo $i<=1, '<hr>';
+            echo $i!=1, '<hr>'; // različito
+
+
+
           ?>
+
+
           </div>
         </div>
         <?php include_once 'podnozje.php'; ?>

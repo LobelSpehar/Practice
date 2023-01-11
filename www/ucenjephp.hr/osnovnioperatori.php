@@ -9,21 +9,36 @@
       <div class="grid-x grid-padding-x">
         <div class="large-12 cell">
           <div class="callout" id="tijelo">
+          
           <?php
-                // https://www.php-fig.org/psr/
-                echo 'Hello world<br>', PHP_EOL; // pod jednostrukim navodnicima ne rade escape sekvence
-                echo "Edunova\n";
+          
+          // operator nadoljepljivanja .
+          echo 'prvo ' . 'drugo', '<hr>';
 
-                // nadoljepljivanje
-                echo '<p>' . 3 . '</p>';
+          //ovo ne ide
+          $a = [];
+          echo 'Prvo ' . $a, '<hr>';
 
-                print '<p>Osijek</p>';
-                //https://stackoverflow.com/questions/234241/how-are-echo-and-print-different-in-php
+          
+          // operator + - / * neću pokazivati
 
-                echo '<p>O\'Neal</p>';
+          // operator modulo %
 
-                echo '<p style="color: red;">X</p>'
+          /*
+          9 / 2 = 4
+          8
+          1 <- ovo je modulo
+          9 % 2 = 1
+          */
+
+          echo 9 % 2, '<hr>';
+
+          echo 9 / 2, '<hr>';
+
+
           ?>
+
+
           </div>
         </div>
         <?php include_once 'podnozje.php'; ?>
