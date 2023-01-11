@@ -28,19 +28,19 @@ $b1 = isset($_GET['b1']) ? $_GET['b1'] : 0;
 $b2 = isset($_GET['b2']) ? $_GET['b2'] : 0;
 $b3 = isset($_GET['b3']) ? $_GET['b3'] : 0;
 
-if($b1===$b2 && $b1===$b3){
-    echo 'Jednaki su';
-} else if($b1<=$b2){
+if($b1<=$b2){
     if($b1<$b3){
         echo $b1;
-    }else{
+    } else if($b1===$b2 && $b1===$b3){
+        echo 'Jednaki su';
+    } else {
         echo $b3;
     }
 } else {
     if($b2<$b3){
         echo $b2;
-    }else{
+    } else {
         echo $b3;
     }
 }
-//?b1=5&b2=1&b3=9
+//?b1=54&b2=12&b3=9
